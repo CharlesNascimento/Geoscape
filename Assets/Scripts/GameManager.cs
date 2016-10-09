@@ -50,9 +50,11 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
+	public GameObject luz;
 	public void LevelCompleted() {
 		isLevelCompleted = true;
-		Player.Instance.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+		luz.SetActive(false);
+		// Player.Instance.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
 		CharacterControl.instance.SetMovementBlocked(true);
 		GameObject[] levelElements = GameObject.FindGameObjectsWithTag("LevelElement");
 		for(int i = 0; i < levelElements.Length; i++) {
@@ -64,6 +66,7 @@ public class GameManager : MonoBehaviour {
 			}
 			levelElements[i].AddComponent<Rigidbody2D>();
 		}
+		AudioManager.instance.PlayAudio(Audios.Win);
 		Debug.Log("Level Completed!!");
 	}
 
@@ -72,8 +75,12 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public bool GameOver() {
-		if(isLevelCompleted) return false;
+		if(isLevelCompleted) {
+			SceneManager.LoadScene("Level01");
+			return false;
+		}
 
+		AudioManager.instance.PlayAudio(Audios.Died);
 		isGameOver = true;
 		SceneManager.LoadScene("Level01");
 		Debug.Log("Dead!!");

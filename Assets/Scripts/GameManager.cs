@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public enum GameplayProtoype {
 	PlayerControlled,
@@ -34,6 +35,12 @@ public class GameManager : MonoBehaviour {
 	void Start() {
 		StartGame();
 	}
+
+	void Update() {
+		if(Input.GetKeyDown(KeyCode.Return)) {
+			LevelCompleted();
+		}
+	}
 	
 	public void StartGame() {
 		if(gameplayProtoype == GameplayProtoype.PlayerControlled) {
@@ -45,6 +52,18 @@ public class GameManager : MonoBehaviour {
 
 	public void LevelCompleted() {
 		isLevelCompleted = true;
+		Player.Instance.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
+		CharacterControl.instance.SetMovementBlocked(true);
+		GameObject[] levelElements = GameObject.FindGameObjectsWithTag("LevelElement");
+		for(int i = 0; i < levelElements.Length; i++) {
+			BlockMover[] bm = levelElements[i].GetComponents<BlockMover>();
+			if(bm != null) {
+				for(int j = 0; j < bm.Length; j++) {
+					bm[j].blockTriggered = false;
+				}
+			}
+			levelElements[i].AddComponent<Rigidbody2D>();
+		}
 		Debug.Log("Level Completed!!");
 	}
 
@@ -56,6 +75,7 @@ public class GameManager : MonoBehaviour {
 		if(isLevelCompleted) return false;
 
 		isGameOver = true;
+		SceneManager.LoadScene("Level01");
 		Debug.Log("Dead!!");
 
 		return true;

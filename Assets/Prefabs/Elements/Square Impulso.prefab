@@ -40,7 +40,7 @@ GameObject:
   - 61: {fileID: 61000013320431864}
   - 114: {fileID: 114000014202134516}
   m_Layer: 0
-  m_Name: Square Magnetic
+  m_Name: Square Impulso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -22,7 +22,7 @@ GameObject:
   - 212: {fileID: 212000013389127634}
   - 61: {fileID: 61000013137181634}
   m_Layer: 0
-  m_Name: Base
+  m_Name: Square Glue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

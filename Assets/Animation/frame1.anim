@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: FrameIn
+  m_Name: frame1
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -28,13 +28,13 @@ AnimationClip:
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
-      - time: 5.983333
+      - time: 13.65
         value: {x: 1, y: 1, z: 1}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
-      - time: 15
-        value: {x: 1.36, y: 1.36, z: 1.36}
+      - time: 17.05
+        value: {x: 1.3599999, y: 1.3599998, z: 1.3599998}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -56,13 +56,13 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - time: 5.983333
+      - time: 13.65
         value: 954
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - time: 15
-        value: -131
+      - time: 17.05
+        value: -90
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -86,12 +86,12 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - time: 5.983333
+      - time: 13.65
         value: -409
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - time: 15
+      - time: 17.05
         value: 120
         inSlope: 0
         outSlope: 0
@@ -135,7 +135,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 15
+    m_StopTime: 21.95
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -164,13 +164,13 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - time: 5.983333
+      - time: 13.65
         value: 954
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - time: 15
-        value: -131
+      - time: 17.05
+        value: -90
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -194,12 +194,12 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - time: 5.983333
+      - time: 13.65
         value: -409
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - time: 15
+      - time: 17.05
         value: 120
         inSlope: 0
         outSlope: 0
@@ -224,13 +224,13 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - time: 5.983333
+      - time: 13.65
         value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - time: 15
-        value: 1.36
+      - time: 17.05
+        value: 1.3599999
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -254,13 +254,13 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - time: 5.983333
+      - time: 13.65
         value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - time: 15
-        value: 1.36
+      - time: 17.05
+        value: 1.3599998
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -284,13 +284,13 @@ AnimationClip:
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - time: 5.983333
+      - time: 13.65
         value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
-      - time: 15
-        value: 1.36
+      - time: 17.05
+        value: 1.3599998
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -305,4 +305,18 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_GenerateMotionCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 21.95
+    functionName: 
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 21.95
+    functionName: StartGame
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

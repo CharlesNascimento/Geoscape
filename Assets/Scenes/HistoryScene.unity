@@ -117,6 +117,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &172088064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 172088061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f128cc978fb7184eb0034008cea80d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &197150690
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,10 +300,10 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 172088062}
-  - {fileID: 1669284846}
-  - {fileID: 1101577406}
   - {fileID: 438673281}
+  - {fileID: 1101577406}
+  - {fileID: 1669284846}
+  - {fileID: 172088062}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
@@ -329,10 +340,10 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 337787683}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 258}
+  m_AnchoredPosition: {x: -31, y: 262}
   m_SizeDelta: {x: 240, y: 99}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &438673282
@@ -399,17 +410,17 @@ Prefab:
     - target: {fileID: 224000011936857626, guid: f4b26a3a969e9834d87495a9d9f621e0,
         type: 2}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 224000011936857626, guid: f4b26a3a969e9834d87495a9d9f621e0,
         type: 2}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 224000011936857626, guid: f4b26a3a969e9834d87495a9d9f621e0,
         type: 2}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 224000011936857626, guid: f4b26a3a969e9834d87495a9d9f621e0,
         type: 2}
@@ -419,17 +430,17 @@ Prefab:
     - target: {fileID: 224000011936857626, guid: f4b26a3a969e9834d87495a9d9f621e0,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224000011936857626, guid: f4b26a3a969e9834d87495a9d9f621e0,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 9
+      value: -31
       objectReference: {fileID: 0}
     - target: {fileID: 224000011936857626, guid: f4b26a3a969e9834d87495a9d9f621e0,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -31
+      value: 98
       objectReference: {fileID: 0}
     - target: {fileID: 224000011936857626, guid: f4b26a3a969e9834d87495a9d9f621e0,
         type: 2}
@@ -489,6 +500,33 @@ Prefab:
         type: 2}
       propertyPath: m_AnchoredPosition.y
       value: -293
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011936939000, guid: f4b26a3a969e9834d87495a9d9f621e0,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 8f2c329b5d05ee64dbca96dd5e3d0cfd,
+        type: 3}
+    - target: {fileID: 114000011980667174, guid: f4b26a3a969e9834d87495a9d9f621e0,
+        type: 2}
+      propertyPath: m_Text
+      value: "De repente, o jovem notou que um livro misterioso come\xE7ou a emitir
+        uma inexplic\xE1vel luz."
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010371603964, guid: f4b26a3a969e9834d87495a9d9f621e0,
+        type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010371603964, guid: f4b26a3a969e9834d87495a9d9f621e0,
+        type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010371603964, guid: f4b26a3a969e9834d87495a9d9f621e0,
+        type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f4b26a3a969e9834d87495a9d9f621e0, type: 2}
@@ -600,7 +638,7 @@ Prefab:
     - target: {fileID: 224000011936857626, guid: f4b26a3a969e9834d87495a9d9f621e0,
         type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224000011936857626, guid: f4b26a3a969e9834d87495a9d9f621e0,
         type: 2}
@@ -654,7 +692,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000010415311820, guid: f4b26a3a969e9834d87495a9d9f621e0, type: 2}
       propertyPath: m_Name
-      value: frame1
+      value: frame3
       objectReference: {fileID: 0}
     - target: {fileID: 224000010371603964, guid: f4b26a3a969e9834d87495a9d9f621e0,
         type: 2}
@@ -670,6 +708,28 @@ Prefab:
         type: 2}
       propertyPath: m_AnchoredPosition.y
       value: -298
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000011368472284, guid: f4b26a3a969e9834d87495a9d9f621e0,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224000010371603964, guid: f4b26a3a969e9834d87495a9d9f621e0,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011936939000, guid: f4b26a3a969e9834d87495a9d9f621e0,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9ea51877d68b78c4f8ac9c88c25a7f4f,
+        type: 3}
+    - target: {fileID: 114000011980667174, guid: f4b26a3a969e9834d87495a9d9f621e0,
+        type: 2}
+      propertyPath: m_Text
+      value: "O livro, com o t\xEDtulo de GeoLand, n\xE3o apenas emitia uma luz qualquer,
+        tratava-se, na verdade, de um portal para o estranho mundo dos pol\xEDgonos."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f4b26a3a969e9834d87495a9d9f621e0, type: 2}
@@ -746,12 +806,12 @@ Prefab:
     - target: {fileID: 224000011936857626, guid: f4b26a3a969e9834d87495a9d9f621e0,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224000011936857626, guid: f4b26a3a969e9834d87495a9d9f621e0,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -438
+      value: -411
       objectReference: {fileID: 0}
     - target: {fileID: 224000011936857626, guid: f4b26a3a969e9834d87495a9d9f621e0,
         type: 2}
@@ -800,7 +860,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000010415311820, guid: f4b26a3a969e9834d87495a9d9f621e0, type: 2}
       propertyPath: m_Name
-      value: frame3
+      value: frame1
       objectReference: {fileID: 0}
     - target: {fileID: 224000010371603964, guid: f4b26a3a969e9834d87495a9d9f621e0,
         type: 2}
@@ -825,7 +885,19 @@ Prefab:
     - target: {fileID: 224000011368472284, guid: f4b26a3a969e9834d87495a9d9f621e0,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 75
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011936939000, guid: f4b26a3a969e9834d87495a9d9f621e0,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9f706cc54146b5443bf04ba460f955fb,
+        type: 3}
+    - target: {fileID: 114000011980667174, guid: f4b26a3a969e9834d87495a9d9f621e0,
+        type: 2}
+      propertyPath: m_Text
+      value: "Tudo come\xE7a quando um jovem rapaz se aventura na biblioteca de sua
+        vila em busca de livros interessantes para explorar."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f4b26a3a969e9834d87495a9d9f621e0, type: 2}
@@ -849,7 +921,7 @@ Animator:
   m_GameObject: {fileID: 1669284845}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: db3aafe1534f5154cb33b698d4211ad2, type: 2}
+  m_Controller: {fileID: 9100000, guid: e55dd9a6eda096e40abdfba266f665ee, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

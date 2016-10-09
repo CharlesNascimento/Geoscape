@@ -1473,13 +1473,14 @@ GameObject:
   - 4: {fileID: 1830233996}
   - 212: {fileID: 1830233997}
   - 114: {fileID: 1830233998}
+  - 95: {fileID: 1830233999}
   m_Layer: 0
   m_Name: LUZ
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1830233996
 Transform:
   m_ObjectHideFlags: 0
@@ -1487,7 +1488,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1830233995}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.383438, y: -4.114257, z: -7.7369885}
+  m_LocalPosition: {x: -9.7, y: -3.68, z: -7.7369885}
   m_LocalScale: {x: 4, y: 3, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
@@ -1542,6 +1543,23 @@ MonoBehaviour:
   lookAheadFactor: 0
   lookAheadReturnSpeed: 0
   lookAheadMoveThreshold: 0
+--- !u!95 &1830233999
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1830233995}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a6c37760bbab74ed9a620c0987c4762d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1845176602
 GameObject:
   m_ObjectHideFlags: 0

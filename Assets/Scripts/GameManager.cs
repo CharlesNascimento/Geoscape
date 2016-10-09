@@ -66,6 +66,7 @@ public class GameManager : MonoBehaviour {
 			}
 			levelElements[i].AddComponent<Rigidbody2D>();
 		}
+		AudioManager.instance.PlayAudio(Audios.Win);
 		Debug.Log("Level Completed!!");
 	}
 
@@ -79,6 +80,7 @@ public class GameManager : MonoBehaviour {
 			return false;
 		}
 
+		AudioManager.instance.PlayAudio(Audios.Died);
 		isGameOver = true;
 		SceneManager.LoadScene("Level01");
 		Debug.Log("Dead!!");

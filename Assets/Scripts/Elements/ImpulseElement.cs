@@ -9,6 +9,7 @@ public class ImpulseElement : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D coll) {
 		if(coll.gameObject.CompareTag("Player")) {
+			AudioManager.instance.PlayAudio(Audios.Elastic);
 			coll.transform.GetComponent<Rigidbody2D>().AddForce(DegreeToVector2(angle) * force, ForceMode2D.Impulse);
 		}
 	}

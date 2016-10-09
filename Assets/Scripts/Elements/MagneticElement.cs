@@ -15,6 +15,7 @@ public class MagneticElement : MonoBehaviour {
 	void OnTriggerEnter2D(Collider2D other) {
 		if(other.transform.CompareTag("Player")) {
 			LeanTween.move(other.gameObject, this.transform.position, 0.3f);
+			AudioManager.instance.PlayAudio(Audios.Attraction);
 			// other.GetComponent<Rigidbody2D>().AddForce(-(player.GetPosition() - this.transform.position).normalized * force, ForceMode2D.Impulse);
 		}
 	}

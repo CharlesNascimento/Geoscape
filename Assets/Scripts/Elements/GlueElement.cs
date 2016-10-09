@@ -3,16 +3,6 @@ using System.Collections;
 
 public class GlueElement : MonoBehaviour {
 
-	public Transform elementsLevel;
-
-	void Start () {
-	
-	}
-	
-	void Update () {
-	
-	}
-
 	void OnCollisionEnter2D(Collision2D coll) {
 		Glue(coll.transform);
 

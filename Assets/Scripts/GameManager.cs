@@ -52,21 +52,23 @@ public class GameManager : MonoBehaviour {
 
 	public GameObject luz;
 	public void LevelCompleted() {
-		isLevelCompleted = true;
+        SceneManager.LoadScene("Level01");
+        isLevelCompleted = true;
 		luz.SetActive(false);
 		// Player.Instance.gameObject.GetComponent<Rigidbody2D>().isKinematic = true;
-		CharacterControl.instance.SetMovementBlocked(true);
+		//CharacterControl.instance.SetMovementBlocked(true);
 		GameObject[] levelElements = GameObject.FindGameObjectsWithTag("LevelElement");
 		for(int i = 0; i < levelElements.Length; i++) {
-			BlockMover[] bm = levelElements[i].GetComponents<BlockMover>();
+			/*BlockMover[] bm = levelElements[i].GetComponents<BlockMover>();
 			if(bm != null) {
 				for(int j = 0; j < bm.Length; j++) {
 					bm[j].blockTriggered = false;
 				}
-			}
+			}*/
 			levelElements[i].AddComponent<Rigidbody2D>();
 		}
-		AudioManager.instance.PlayAudio(Audios.Win);
+
+		//AudioManager.instance.PlayAudio(Audios.Win);
 		Debug.Log("Level Completed!!");
 	}
 
@@ -80,7 +82,7 @@ public class GameManager : MonoBehaviour {
 			return false;
 		}
 
-		AudioManager.instance.PlayAudio(Audios.Died);
+		//AudioManager.instance.PlayAudio(Audios.Died);
 		isGameOver = true;
 		SceneManager.LoadScene("Level01");
 		Debug.Log("Dead!!");
